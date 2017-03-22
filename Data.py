@@ -50,3 +50,9 @@ class ImageData:
             raise TypeError('please check the data\'s and flag\'s shape')
         random_num = random.sample(range(self.__data.shape[0]), num)
         return self.__data[random_num, :], self.__flag[random_num, :]
+
+    def set_flag(self, flag):
+        self.__flag = flag
+
+    def set_data(self, data):
+        self.__data = data
